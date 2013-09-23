@@ -1,0 +1,5 @@
+getty_browser:
+    resource: "@GettyBrowserBundle/Controller/"
+    type:     annotation
+    prefix:   /
+

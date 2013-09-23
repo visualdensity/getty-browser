@@ -1,0 +1,32 @@
+{% extends 'GettyBrowserBundle::default.html.twig' %}
+
+{% block content %}
+<!-- Begin page content -->
+<div class="container">
+    <div class="page-header">
+        <h1>Getty Test</h1>
+    </div>
+
+    <p class="row">
+        {{ form(form) }}
+    </p>
+
+    {% if images is iterable %}
+    {% for row in images %}
+    <div class="row images-row">
+        {% for i in row %}
+        <div class="col-md-4">
+            <div class="image-thumb">
+            <a href="{{ i.UrlComp }}" target="_blank">
+                <img src="{{ i.UrlThumb }}" />
+            </a>
+            <span>{{ i.Title }}</span>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+    {% endfor %}
+    {% endif %}
+
+</div>
+{% endblock content %}
