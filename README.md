@@ -1,7 +1,7 @@
 Getty Images Test
 =================
 
-Project for testing Getty Image's API connect. You will need to create an account on [https://api.gettyimages.com/], request for an API key before you can use it.
+Project for testing Getty Image's API connect. You will need to create an account on [Getty Images API](https://api.gettyimages.com/), request for an API key before you can use it.
 
 Dependencies
 -----------
