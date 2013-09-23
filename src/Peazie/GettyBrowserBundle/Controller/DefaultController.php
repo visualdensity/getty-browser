@@ -74,7 +74,7 @@ class DefaultController extends Controller
                         }
                     }
 
-                    $cache->set( 'query.' . $query, $images, 5*60*60 );
+		    $cache->set( 'query.' . $query, $images, 12*60*60 );
                 } else {
                     print_r($data); 
                     die;
